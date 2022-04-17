@@ -1,0 +1,231 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .hero-container {
+    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+  
+  .hero-container > h3 {
+    color: #fff;
+    font-size: 60px;
+    margin-top: -70px;
+  }
+   
+  .hero-container > h4 {
+    color: #fff;
+    font-size: 37px;
+    margin-top: -70px;
+  }
+  
+  .hero-container > .mentor-line > p {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .hero-btns {
+    margin-top: 32px;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+
+  
+.mentor-name{
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  position: relative;
+  margin-left: -550px;
+  margin-top: 17px;
+  margin-bottom: 57px;
+}
+.minus{
+  padding-right: 11px;
+
+}
+.mentor-name::before{
+  content: '- Jhankar Mahbub, the mentor';
+  position: absolute;
+  color:  rgb(149, 203, 216);
+  animation: typing 3s linear infinite;
+}
+
+@keyframes typing {
+  0% {
+      content: 'J';
+  }
+
+  4% {
+      content: 'Jh';
+  }
+
+  8% {
+      content: 'Jha';
+  }
+
+  12% {
+      content: 'Jhank';
+  }
+
+  16% {
+      content: 'Jhanka';
+  }
+
+  20% {
+      content: 'Jhankar';
+  }
+
+  24% {
+      content: 'Jhankar Ma';
+  }
+
+  28% {
+      content: 'Jhankar Mahb';
+  }
+
+  32% {
+      content: 'Jhankar Mahbub';
+  }
+
+  36% {
+      content: 'Jhankar Mahbub, t';
+  }
+
+  40% {
+      content: 'Jhankar Mahbub, the';
+  }
+
+  44% {
+      content: 'Jhankar Mahbub, the men';
+  }
+
+  48% {
+      content: 'Jhankar Mahbub, the ment';
+  }
+
+  52% {
+      content: 'Jhankar Mahbub, the mento';
+  }
+
+  56% {
+      content: 'Jhankar Mahbub, the mentor';
+  }
+
+  60% {
+      content: 'Jhankar Mahbub, the mentor';
+  }
+
+  64%,
+  83% {
+      content: 'Jhankar Mahbub, the mentor';
+  }
+
+  84% {
+      content: 'Jhankar Mahbub, the ment';
+  }
+
+  85% {
+      content: 'Jhankar Mahbub, the m';
+  }
+
+  86% {
+      content: 'Jhankar Mahbub, th';
+  }
+
+  87% {
+      content: 'Jhankar Mahbub, ';
+  }
+
+  88% {
+      content: 'Jhankar Mah';
+  }
+
+  89% {
+      content: 'Jhankar M';
+  }
+
+  90% {
+      content: 'Jhankar';
+  }
+
+  91% {
+      content: 'Jhank';
+  }
+
+  92% {
+      content: 'Jha';
+  }
+
+  93% {
+      content: 'Jh';
+  }
+
+  94% {
+      content: 'J';
+  }
+
+  97% {
+      content: 'J';
+  }
+
+  98% {
+      content: 'J';
+  }
+
+  99% {
+      content: '';
+  }
+
+  100% {
+      content: '';
+  }
+  }
+
+  
+  @media screen and (max-width: 960px) {
+    .hero-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .hero-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }

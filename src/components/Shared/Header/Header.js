@@ -16,9 +16,9 @@ const Header = () => {
 
   return (
     <Navbar sticky="top" expand="lg" bg="light">
-      <Container fluid>
+      <Container>
         <Navbar.Brand as={Link} to="/">
-          <img height={30} src="https://cdn-icons-png.flaticon.com/128/987/987748.png?ga=GA1.1.208812877.1649674070" type="image/x-icon" alt="" /> <span className='ps-1 pe-4 text-secondary'>EduHash-Mentor</span>
+          <img height={30} src="https://cdn-icons-png.flaticon.com/128/987/987748.png?ga=GA1.1.208812877.1649674070" type="image/x-icon" alt="" /> <span className='ps-3 pe-4 text-secondary'>EduHash-Mentor</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
@@ -63,7 +63,7 @@ const Header = () => {
                   :
                   <Link to='/registration' className='nav-link'>
                     <button
-                      className='btn btn-danger btn-rounded'
+                      className='btn btn-danger rounded-pill'
                     >
                       Registration
                     </button>
