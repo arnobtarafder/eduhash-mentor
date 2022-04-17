@@ -42,7 +42,7 @@ const Header = () => {
                 user ?
                   <Link to='/checkout' className='nav-link'>
                     {user.displayName}
-                    <img className='ml-3 ms-3 rounded-circle' src={user? user?.photoURL : "https://cdn-icons-png.flaticon.com/128/1177/1177568.png"} width="35px" alt="" />
+                    <img className='ml-3 ms-2 rounded-circle' src={user?.photoURL ? user.photoURL : "https://cdn-icons-png.flaticon.com/128/1177/1177568.png"} width="35px" alt="" />
                   </Link>
                   :
                   <Link to='/login' className='nav-link pt-3 pe-4 fw-bolder'>Login</Link>

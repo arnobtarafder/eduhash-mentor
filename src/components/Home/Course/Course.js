@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Course.css';
 
 const Course = ({ courses }) => {
@@ -22,7 +22,7 @@ const Course = ({ courses }) => {
                             {description.slice(0, 278)}<span className=''><button onClick={() => navigateToServiceDetail(id)} className='btn btn-link text-decoration-none ps-0'>...read more</button></span> 
                         </div>
                     }</small></p>
-                <button onClick={() => navigateToServiceDetail(id)} className='btn btn-primary position-absolute top-auto bottom-0'>Book Now</button>
+                <Link to="/checkout" className='btn btn-primary position-absolute top-auto bottom-0'>Book Now</Link>
             </div>
         </div>
     );
