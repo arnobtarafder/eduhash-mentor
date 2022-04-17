@@ -10,7 +10,7 @@
     position: absolute;
   }
   
-  body{
+  .not-found-body{
       background: #ac86cf;
       background-image: linear-gradient( 135deg, #afc5e7 10%, #cabcf1 100%);
       background-attachment: fixed;

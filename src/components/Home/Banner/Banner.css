@@ -6,7 +6,7 @@ video {
     z-index: -1;
   }
   
-  .hero-container {
+  .banner-container {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 70vh;
     width: 100%;
@@ -18,19 +18,19 @@ video {
     object-fit: contain;
   }
   
-  .hero-container > h3 {
+  .banner-container > h3 {
     color: #fff;
     font-size: 60px;
     margin-top: -70px;
   }
    
-  .hero-container > h4 {
+  .banner-container > h4 {
     color: #fff;
     font-size: 37px;
     margin-top: -70px;
   }
   
-  .hero-container > .mentor-line > p {
+  .banner-container p {
     margin-top: 30px;
     color: #fff;
     font-size: 32px;
@@ -38,11 +38,11 @@ video {
       'Lucida Sans', Arial, sans-serif;
   }
   
-  .hero-btns {
+  .banner-button {
     margin-top: 32px;
   }
   
-  .hero-btns .btn {
+  .banner-button .btn {
     margin: 6px;
   }
   
@@ -50,7 +50,54 @@ video {
     margin-left: 4px;
   }
 
+
   
+  @media screen and (max-width: 960px) {
+    .banner-container > h3 {
+      font-size: 40px;
+      margin-top: -150px;
+    }
+    .banner-container > h4 {
+      font-size: 20px;
+      margin-top: -150px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .banner-container > h3 {
+      font-size: 30px;
+      margin-top: -100px;
+    }
+    .banner-container > h4 {
+      font-size: 20px;
+      margin-top: -100px;
+    }
+  
+    .banner-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  
+/*   
 .mentor-name{
   font-weight: lighter;
   color: rgb(255, 255, 255);
@@ -200,32 +247,4 @@ video {
   100% {
       content: '';
   }
-  }
-
-  
-  @media screen and (max-width: 960px) {
-    .hero-container > h1 {
-      font-size: 70px;
-      margin-top: -150px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .hero-container > h1 {
-      font-size: 50px;
-      margin-top: -100px;
-    }
-  
-    .hero-container > p {
-      font-size: 30px;
-    }
-  
-    .btn-mobile {
-      display: block;
-      text-decoration: none;
-    }
-  
-    .btn {
-      width: 100%;
-    }
-  }
+  } */

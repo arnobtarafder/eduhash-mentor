@@ -1,3 +1,13 @@
+body{
+	width: 100%;
+	position: relative;
+}
+.footer-section{
+	margin-bottom: 0px;
+	margin-top: auto;
+	bottom: 0%;
+}
+
 .bg-color {
 	background-color: rgb(234, 248, 246);
 }

@@ -7,12 +7,12 @@ const Footer = () => {
     const year = today.getFullYear();
 
     return (
-        <footer className='bg-color py-3'>
+        <footer className='bg-color py-3 mb-0 footer-section'>
             <div className='container'>
                 <div className='row footer-top py-5'>
                     <div className='col-md-6 mb-5'>
                         <img src="https://cdn-icons-png.flaticon.com/128/987/987748.png?ga=GA1.1.208812877.1649674070" alt="white-logo" />
-                        <span className='fw-bold fs-4 ps-3 mt-5'>EduHash Mentor</span>
+                        <span className='fw-bold fs-4 ps-3 mt-5 text-secondary'>EduHash Mentor</span>
                     </div>
                     <div className='col-md-3'>
                         <ul className='list-unstyled'>
