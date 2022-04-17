@@ -7,11 +7,11 @@ import auth from '../../../firebase.init';
 import './Header.css'
 
 const Header = () => {
-  //   const [user] = useAuthState(auth)
+    const [user] = useAuthState(auth)
 
-  //   const handleSignOut = () => {
-  //     signOut(auth);
-  //   }
+    const handleSignOut = () => {
+      signOut(auth);
+    }
 
 
   return (
@@ -39,10 +39,10 @@ const Header = () => {
 
             <Nav.Item>
               {
-                auth.user ?
+                user ?
                   <Link to='/checkout' className='nav-link'>
-                    {auth.user.displayName}
-                    <img className='ml-3' src={auth.user.photoURL ? auth.user.photoURL : "https://cdn-icons-png.flaticon.com/128/1177/1177568.png"} width="35px" alt="" />
+                    {user.displayName}
+                    <img className='ml-3 ms-3' src={user.photoURL ? auth.user.photoURL : "https://cdn-icons-png.flaticon.com/128/1177/1177568.png"} width="35px" alt="" />
                   </Link>
                   :
                   <Link to='/login' className='nav-link pt-3 pe-4 fw-bolder'>Login</Link>
@@ -52,9 +52,9 @@ const Header = () => {
             <Nav.Item>
 
               {
-                auth.user ?
+                user ?
                   <Link to='/' className='nav-link'>
-                    <button onClick={() => { auth.signOut() }}
+                    <button onClick={handleSignOut}
                       className='btn btn-danger btn-rounded'
                     >
                       Log Out
