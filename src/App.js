@@ -3,6 +3,7 @@ import './App.css';
 import Login from './components/Authentication/Login/Login';
 import Registration from './components/Authentication/Registration/Registration';
 import Home from './components/Home/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 import Header from './components/Shared/Header/Header';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/login' element={<Login />}>Login</Route>
         <Route path='/registration' element={<Registration />}>Registration</Route>
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
     </div>
   );
