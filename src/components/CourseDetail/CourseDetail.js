@@ -5,6 +5,7 @@ import './CourseDetail.css';
 const CourseDetail = () => {
     const { courseId } = useParams();
     const [course, setCourse] = useState([]);
+    // const [singleDetail, setSingleDetail] = useState([]);
 
     const AllCourses = `https://raw.githubusercontent.com/arnobtarafder/genius-servicesData/main/services.json`;
     // const AllCourses = "courses.json";
@@ -15,6 +16,11 @@ const CourseDetail = () => {
             .then(data => setCourse(data))
     }, [courseId])
     // console.log(service[serviceId-1]?.id);
+
+    // useEffect(() => {
+    //     const found = course.find(detail => detail.id == courseId)
+    //     setSingleDetail(found)
+    // }, [course, courseId])
 
 
     return (
