@@ -6,10 +6,11 @@ const CourseDetail = () => {
     const { courseId } = useParams();
     const [course, setCourse] = useState([]);
 
-    const AllServices = `https://raw.githubusercontent.com/arnobtarafder/genius-servicesData/main/services.json`;
+    const AllCourses = `https://raw.githubusercontent.com/arnobtarafder/genius-servicesData/main/services.json`;
+    // const AllCourses = "courses.json";
 
     useEffect(() => {
-        fetch(AllServices)
+        fetch(AllCourses)
             .then(res => res.json())
             .then(data => setCourse(data))
     }, [courseId])

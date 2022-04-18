@@ -3,6 +3,7 @@ import './App.css';
 import Login from './components/Authentication/Login/Login';
 import PrivateAuth from './components/Authentication/PrivateAuth/PrivateAuth';
 import Registration from './components/Authentication/Registration/Registration';
+import Blogs from './components/Blogs/Blogs';
 import Checkout from './components/Checkout/Checkout';
 import CourseDetail from './components/CourseDetail/CourseDetail';
 import Home from './components/Home/Home/Home';
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
+        <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/course/:courseId' element={<CourseDetail />}></Route>
         <Route path='/checkout' element={
             <PrivateAuth>

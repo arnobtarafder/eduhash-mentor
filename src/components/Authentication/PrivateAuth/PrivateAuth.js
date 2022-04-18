@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, useLocation } from 'react-router-dom';
 import auth from '../../../firebase.init';
@@ -7,7 +7,7 @@ import Loading from '../../Shared/Loading/Loading';
 
 const PrivateAuth = () => {
     const [user, loading] = useAuthState(auth);
-    const location = useLocation()
+    const location = useLocation();
     if(loading) {
         return <Loading />
     }
@@ -15,9 +15,8 @@ const PrivateAuth = () => {
         return <Navigate to="/login" state={{ from: location }} replace />
     }
     return (
-        <div>
+            // {children}
             <Checkout />
-        </div>
     );
 };
 
