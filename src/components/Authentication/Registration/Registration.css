@@ -30,7 +30,7 @@
 #login-box {
   position: relative;
   margin: 5% auto;
-  width: 600px;
+  width: 780px;
   height: 700px;
   background: #FFF;
   border-radius: 2px;
@@ -43,7 +43,7 @@
   left: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 300px;
+  width: 370px;
   height: 400px;
 }
 
@@ -111,7 +111,7 @@ input[type="submit"]:active {
   right: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 300px;
+  width: 350px;
   height: 700px;
   background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6c8LRfAdTZs5ePYlaPV3lng9b5jfp9Rycw&usqp=CAU');
   background-size: cover;

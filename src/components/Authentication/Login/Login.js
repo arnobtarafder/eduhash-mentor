@@ -3,12 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css'
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialAuth/SocialAuth';
-import { async } from '@firebase/util';
-
 
 const Login = () => {
     const emailRef = useRef("");
@@ -49,16 +47,14 @@ const Login = () => {
     }
 
 
-
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
+        // if(password?.length < 5){
+        //     return alert("too short!")
+        // }
 
-        if(password === "") {
-            setError("must need password")
-        }
-     
         signInWithEmailAndPassword(email, password)
         // console.log(email, password);
     }
@@ -80,22 +76,22 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto mt-5'>
+        <div className='container w-50 mx-auto mt-5 mb-5 pb-5'>
             <h1 className='text-center text-primary pt-5'>Please Login</h1>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
                 </Form.Group>
-                <Button variant="primary w-50 d-block mx-auto mb-3" type="submit">
+                <Button variant="primary w-50 d-block mx-auto mb-3 rounded-pill mb-4" type="submit">
                     Login
                 </Button>
             </Form>
             {errorElement}
-            <p style={{ color: 'red' }} > {errors} </p>
+            <p style={{ color: 'red' }} > {error} </p>
                             {
                                 error && <p>  {error?.message} </p> 
                             } 

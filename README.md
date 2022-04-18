@@ -32,6 +32,10 @@ The following open source packages are used in this project:
 * Reset Password
 * Hosting
 
+
+## Resources
+### Courses data: https://raw.githubusercontent.com/arnobtarafder/eduhash-data/main/courses.json
+
 ##### 
 ##### 
 ##### 
