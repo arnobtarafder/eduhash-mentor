@@ -25,7 +25,7 @@ Here is the task that you need to do.
 
 9. If you reload the protected/private route (after login), this page will not redirect the user to the login page. Instead, it will keep the logged-in user on the protected route. (done) 
 -------
-10. You Must implement Email-password based authentication. You will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view. You can use `react router hook` to implement the login system. And don't forget to make the Email and password field a required field. 
+10. You Must implement Email-password based authentication. You will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view. You can use `react router hook` to implement the login system. And don't forget to make the Email and password field a required field. (done)
 
 11. Also, implement at least one extra login, which could be (facebook, github, google, etc). (done)
 
@@ -40,7 +40,7 @@ Here is the task that you need to do.
     13.3 What other services does `firebase` provide other than authentication? (done)
 
 
-14. You will create an about me page. It could be the `about` route. There will put your name and your image (picture is optional. However, if you put a photo, please put a professional look picture). And write a small paragraph (3-5 lines) about your goal. And how you will work hard to achieve your goal.  
+14. You will create an about me page. It could be the `about` route. There will put your name and your image (picture is optional. However, if you put a photo, please put a professional look picture). And write a small paragraph (3-5 lines) about your goal. And how you will work hard to achieve your goal. (done) 
 ----
 15. Create a 404 not found page (done)
 16. Minimum 9 meaningful git commit (done)

@@ -13,7 +13,7 @@ body{
 }
 
 .text-color {
-	color: rgb(255, 69, 101);
+	color: rgb(252, 34, 70);
 }
 
 footer img {
@@ -27,7 +27,7 @@ footer a {
 }
 
 footer a:hover {
-	color: rgb(255, 69, 101);
+	color: rgb(117, 155, 126);
 }
 
 .list-unstyled li{

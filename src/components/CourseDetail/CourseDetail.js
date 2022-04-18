@@ -7,7 +7,7 @@ const CourseDetail = () => {
     const [course, setCourse] = useState([]);
     // const [singleDetail, setSingleDetail] = useState([]);
 
-    const AllCourses = `https://raw.githubusercontent.com/arnobtarafder/genius-servicesData/main/services.json`;
+    const AllCourses = `https://raw.githubusercontent.com/arnobtarafder/eduhash-data/main/courses.json`;
     // const AllCourses = "courses.json";
 
     useEffect(() => {
@@ -36,12 +36,13 @@ const CourseDetail = () => {
             <div className=''>
                 <h2>{course[courseId-1]?.name}</h2>
                 <h4 className='text-sans fw-normal pb-3'>Price: {course[courseId-1]?.price}</h4>
+                <h3 className='text-primary'>Instructor: Arnob Tarafder</h3>
 
-                <p id='description' style={{textAlign: "justify"}} className='pb-5 w-50 lh-base fs-4 mx-auto'><small>{course[courseId-1]?.description}</small></p>
+                <p id='description' style={{textAlign: "justify"}} className='pb-2 w-75 lh-base fs-4 mx-auto'><small>{course[courseId-1]?.description}</small></p>
             </div>
           </div>     
 
-            <div className='text-center'>
+            <div className='text-center mb-5 pb-5'>
 
                 <Link to="/checkout">
                     <button className='btn btn-primary px-5 py-3'>Proceed Checkout</button>

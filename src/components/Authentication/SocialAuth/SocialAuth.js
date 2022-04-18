@@ -29,33 +29,35 @@ const SocialLogin = () => {
 
     return (
         <div>
-        <div className='d-flex align-items-center'>
+        {/* <div className='d-flex align-items-center'>
             <div style={{height: "1px"}} className='bg-primary w-50'></div>
             <p className='mt-3 px-3'>or</p>
             <div style={{height: "1px"}} className='bg-primary w-50'></div>
-         </div>   
+         </div>    */}
          {errorElement}
-            <div className=''>
+            <div className='social'>
 
                 <button
                     onClick={() => signInWithGoogle()}
 
-                    className='btn btn-primary w-50'>
+                    className='btn btn-primary w-100 mb-3 d-block google'>
                     <img style={{width: "30px"}} src="https://seeklogo.com/images/N/new-google-favicon-logo-5E38E037AF-seeklogo.com.png" alt="" />
                     <span className='px-3'>Google Sign In</span>
                 </button>
 
-                <button className='btn btn-info w-50 my-3'>
-                    <img style={{width: "30px"}} src="https://github.com/ProgrammingHero1/genius-car-service-direction-module-62/blob/main/src/images/social/facebook.png?raw=true" alt="" />
-                    <span className='px-3'>Facebook Sign In</span>
-                </button>
 
                 <button 
                     onClick={() => signInWithGithub()}
 
-                    className='btn btn-primary w-50'>
+                    className='btn btn-primary w-100 d-block github'>
                     <img style={{width: "30px"}} src="https://github.com/ProgrammingHero1/genius-car-service-direction-module-62/blob/main/src/images/social/github.png?raw=true" alt="" />
                     <span className='px-3'>Github Sign In</span>
+                </button>
+
+
+                <button className='btn btn-info w-100 my-3 d-block facebook'>
+                    <img style={{width: "30px"}} src="https://github.com/ProgrammingHero1/genius-car-service-direction-module-62/blob/main/src/images/social/facebook.png?raw=true" alt="" />
+                    <span className='px-3'>Facebook Sign In</span>
                 </button>
             </div>
         </div>

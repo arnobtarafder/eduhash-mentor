@@ -1,16 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialAuth/SocialAuth';
+import { async } from '@firebase/util';
+
 
 const Login = () => {
     const emailRef = useRef("");
     const passwordRef = useRef("");
+    const [errors, setError] = useState("")
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
@@ -31,6 +34,9 @@ const Login = () => {
 
       if(user) {
         //   navigate("/");
+        toast('successfully done!', {
+            icon: '👏', 
+          });
         navigate(from, {replace: true});
       }
 
@@ -43,11 +49,16 @@ const Login = () => {
     }
 
 
+
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
+        if(password === "") {
+            setError("must need password")
+        }
+     
         signInWithEmailAndPassword(email, password)
         // console.log(email, password);
     }
@@ -84,9 +95,14 @@ const Login = () => {
                 </Button>
             </Form>
             {errorElement}
+            <p style={{ color: 'red' }} > {errors} </p>
+                            {
+                                error && <p>  {error?.message} </p> 
+                            } 
+
                 <p>New to EduHash Mentor? <Link to="/registration" className='text-primary text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
 
-                <p>Forget Password? <button className='btn btn-link text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
+                <p>Forget Password? <button className='btn btn-link text-decoration-none text-danger' onClick={resetPassword}>Reset Password</button></p>
                 <SocialLogin />
                 <ToastContainer />
         </div>

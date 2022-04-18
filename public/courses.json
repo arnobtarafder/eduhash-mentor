@@ -2,42 +2,42 @@
     {
         "id": 1,
         "name": "Bangla",
-        "price": "11000",
+        "price": "11000 taka",
         "description": "This course is designed for the freshers (1st semester students). It is an introductory course on computer studies. Also, students will understand the key differences between university education and Higher Secondary level along with the full four years CSE program structure. Fundamental topics of computing such as number systems, hardware and software systems, flow chart design, aspects of the different operating systems, using Office-365 tools, etc. Students will achieve knowledge on very basic structural programming (how to write a simple program using variables, printf and scanf). This course also focuses on safe internet browsing for 21st century. Students will undertake CISCO IT Essentials training during this course. The course will highlight university and department’s rules, regulations and policies. The course will highlight university and department’s rules, regulations and policies (pre-registration, registration, exam permit, Set-B exams, Adding/Dropping, Grading scale, Course Evaluation procedures) etc. along with the online learning system VUES (Virtual University Expert Systems) which they have to use throughout their bachelor studies for every educational and official operations. Concept of Digital Piracy and Academic Integrity ",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kWkg_vPyvR0pAYa1SRDkSeEl6VSJ3JHHEg&usqp=CAU"
     },
     {
         "id": 2,
         "name": "Mathematics",
-        "price": "25000",
+        "price": "25000 taka",
         "description": "This will be the right decision if you are taking preparation of bcs or admission test. We manage this course full online. This course provides important skill building in basic computational skills, the language of mathematics, and problem solving required for pre-college level math courses. Students will be able to apply principles of whole number operations, fractions, decimals, percents, integers, ratios and proportions, and algebraic equations. Prerequisites: An appropriate score on a placement test. Mathematics is the science and study of quality, structure, space, and change. Mathematicians seek out patterns, formulate new conjectures, and establish truth by rigorous deduction from appropriately chosen axioms and definitions.",
         "img": "https://assets.ltkcontent.com/images/44530/math-terms-explained_0066f46bde.jpg"
     },
     {
         "id": 3,
         "name": "English",
-        "price": "21000",
+        "price": "21000 taka",
         "description": "Are you preparing for TOEFL / IELTS? Or do you need to punctuate punctuation or syntax rules a little more? 10 minute school but has come up with a crash course in English grammar to help you achieve this goal.        Arnob Tarafder's 'English Grammar Crash Course' brings you 10 minutes of school to free you from the complicated methods of learning conventional English grammar. In this course you will be taught English grammar through practical examples instead of memorizing grammar rules like formulas. With our course materials, you can easily learn grammar rules without having to memorize them. Here you can learn basic English grammar such as: Noun, Pronoun, Articles, Right Forms of Verbs, Gerunds, Tense etc. as well as complex subjects like: Prepositions, Changing sentences, Modifiers, Connectors etc. And as soon as you become proficient in English grammar rules, a strong foundation for speaking and pronouncing English will be formed. So what are you waiting for now? Learn basic English grammar without memorizing grammar rules, avoid common mistakes and become more confident in your English grammar skills today. Enroll the course now!",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQLKkbm2hFUaZduEyshcJ8bthGCpzj9uNbl_W6uueSNaEjgcIbZzbJgPdUr7NVh-D1wA&usqp=CAU"
     },
     {
         "id": 4,
         "name": "Religious",
-        "price": "18000",
+        "price": "18000 taka",
         "description": "Do you still have problems reciting the Qur'an after a lot of practice? Seeing that the Qur'an has not been read for a long time, what is happening? Do you want to learn to read Quran Sharif in a short time and know the rules of reading Quran? No worries, because 10 Minute School has come up with a 'Learn Quran in 24 Hours' course to make your Quran learning easier. This course is for those who want to improve their Quran recitation skills or learn the essentials of Quran recitation. This Qur'an education course will not only provide a concise, clear and comprehensive teaching for Qur'an teaching, it will also enhance the students' recitation skills and help them to eliminate mistakes related to Qur'an recitation. The course is designed to teach people of any age how to recite Al-Quran and easy way to teach Quran. This course of teaching Quran in easy Bengali has been designed in such a way that it is easy for the students to learn the recitation of the Qur'an Sharif. They should not face any difficulty in understanding the course and they should be fully benefited by the content of the course. If you want to improve your Quran reading skills, know the rules of reading the Quran correctly and get the Quran education correctly and accurately, enroll in the course now!",
         "img": "https://amayei.nyc3.digitaloceanspaces.com/2021/03/GettyImages-921601458.jpg"
     },
     {
         "id": 5,
         "name": "ICT",
-        "price": "11000",
+        "price": "11000 taka",
         "description": "Do you still go to computer store at any simple need? If you want to do the work at home, you should definitely enroll on this course. Information and Communications Technology (ICT) is technology that is used to handle communications processes such as telecommunications, broadcast media, intelligent building management systems, audiovisual processing and transmission systems, and network-based control and monitoring functions. What is the main point of ICT subject? One of the main aims of ICT is to help students to become competent and confident users who can use the basic knowledge and skills acquired to assist them in their daily lives. ICT skills are about understanding and applying a range of computer programmes, software and other applications. These include: word processing, spreadsheets, databases, power points and search engines. ICT in education improves engagement and knowledge retention: When ICT is integrated into lessons, students become more engaged in their work. This is because technology provides different opportunities to make it more fun and enjoyable in terms of teaching the same things in different ways.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsuzbrisr9VGeNgqqZfhxaRevyYuY00Z3awHcYokqNlwC6CLHB_343BwpZAkz9NsMdmOQ&usqp=CAU"
     },
     {
         "id": 6,
         "name": "General Knowledge",
-        "price": "78000",
+        "price": "78000 taka",
         "description": "General knowledge is an essential component of crystallized intelligence. It is strongly associated with general intelligence and with openness to experience. Studies have found that people who are highly knowledgeable in a particular domain tend to be knowledgeable in many. General knowledge is something that really helps us to grow both on personal as well as academic level. It narrows our sense of perceiving the world, understands, and analyzes the situations better as one would without proper knowledge. In this general knowledge, Static General Knowledge is divided into three main categories as Basic GK, India GK, World GK and those are presented with numerous Subtopic wise manners for your easy understanding. General Knowledge keeps students updated that helps them to remain one step ahead from others. By using their general awareness skills about the things happening around, students can participate in general knowledge related quizzes and competitions confidently and win awards.",
         "img": "https://assets.thehansindia.com/h-upload/2019/10/28/230255-1.webp"
     }

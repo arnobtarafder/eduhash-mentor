@@ -24,9 +24,9 @@ const Header = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='text-dark' href="/about">About</Nav.Link>
-            <Nav.Link className='text-dark' href="/blogs">Blogs</Nav.Link>
-            <Nav.Link  className='text-dark' href="/home#services">Services</Nav.Link>
+            <Nav.Link className='text-dark' as={Link} to="/about">About</Nav.Link>
+            <Nav.Link className='text-dark' as={Link} to="/blogs">Blogs</Nav.Link>
+            <Nav.Link  className='text-dark' as={Link} to="/home#services">Services</Nav.Link>
 
             <NavDropdown title="Courses" id="collasible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/course/1">Bangla</NavDropdown.Item>
@@ -44,8 +44,8 @@ const Header = () => {
               {
                 user ?
                   <Link to='/checkout' className='nav-link'>
-                    {user?.displayName && "mr.user"}
-                    <img className='ml-3 ms-2 rounded-circle' src={user?.photoURL ? user.photoURL : "https://cdn-icons-png.flaticon.com/128/1177/1177568.png"} width="35px" alt="" />
+                    {user?.displayName ? user.displayName : "mr.user"}
+                    <img className='ml-3 ms-2 rounded-circle' src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTZa9zbpSzXR8zIpsVu_ttX7xukvQPOjXew&usqp=CAU"} width="35px" alt="" />
                   </Link>
                   :
                   <Link to='/login' className='nav-link pt-3 pe-4 fw-bolder'>Login</Link>
