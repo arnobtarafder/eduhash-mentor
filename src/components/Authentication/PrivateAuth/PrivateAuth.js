@@ -16,7 +16,9 @@ const PrivateAuth = () => {
     }
     return (
             // {children}
-            <Checkout />
+            <div>
+                <Checkout />
+            </div>
     );
 };
 
