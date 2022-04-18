@@ -1,0 +1,28 @@
+.offerBanner{
+    background-image: url("https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?size=626&ext=jpg&ga=GA1.2.208812877.1649674070");
+    background-size: auto 100%;
+    min-height: 300px;
+   }
+   
+   .promotiomText{
+       color: rgb(187, 207, 207);
+       font-weight: 700;
+       letter-spacing: 3.5px;
+       font-size: 27px;
+       margin-top: 3rem;
+       line-height: 42px;
+   }
+   
+   .qutes{
+       color: rgb(42, 102, 18);
+   }
+   
+   @media (min-width : 500px) and (max-width:768px){
+       .offerBanner img{
+           display: none;
+       }
+   }
+   
+   .qutesheader{
+       margin-top: 13rem;
+   }

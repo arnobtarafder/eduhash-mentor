@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className='col-md-3'>
                         <ul className='list-unstyled'>
                             <li><Link to='/about'>About Us</Link></li>
-                            <li><Link to='/blog'>Read Our Blog</Link></li>
+                            <li><Link to='/blogs'>Read Our Blog</Link></li>
                             <li><Link to='/registration'>Sign up</Link></li>
                         </ul>
                     </div>

@@ -15,7 +15,7 @@ const Courses = () => {
         <div id='courses' className='container'>
 
             <div className="row">
-            <h1 className='text-primary text-center mt-5'>My Courses: {courses.length}</h1>
+            <h1 className='text-primary text-center mt-5 mb-0'>My Courses: {courses.length}</h1>
            <div className="courses-container">
            {
                 courses.map(course => <Course

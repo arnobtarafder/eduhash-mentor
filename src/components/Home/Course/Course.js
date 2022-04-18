@@ -9,7 +9,7 @@ const Course = ({ courses }) => {
         navigate(`/course/${id}`)
     }
     return (
-        <div className='course position-relative my-5'>
+        <div className='course position-relative mb-5 mt-4'>
             <img className='w-100' src={img} alt="" />
             <div className='p-3'>
                 <h2>{name}</h2>
