@@ -29,11 +29,13 @@ const Header = () => {
             <Nav.Link  className='text-dark' href="/home#services">Services</Nav.Link>
 
             <NavDropdown title="Courses" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="https://github.com/robert" target="_blank">Bangla</NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/john" target="_blank">Math</NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/kiron0" target="_blank">English</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/course/1">Bangla</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/course/2">Math</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/course/3">English</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/course/4">Religious</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/course/5">ICT</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/course/6">General Knowledge</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4"></NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
@@ -42,7 +44,7 @@ const Header = () => {
               {
                 user ?
                   <Link to='/checkout' className='nav-link'>
-                    {user.displayName}
+                    {user?.displayName && "mr.user"}
                     <img className='ml-3 ms-2 rounded-circle' src={user?.photoURL ? user.photoURL : "https://cdn-icons-png.flaticon.com/128/1177/1177568.png"} width="35px" alt="" />
                   </Link>
                   :
@@ -56,7 +58,7 @@ const Header = () => {
                 user ?
                   <Link to='/' className='nav-link'>
                     <button onClick={handleSignOut}
-                      className='btn btn-danger btn-rounded'
+                      className='btn btn-danger btn-rounded rounded-pill'
                     >
                       Log Out
                     </button>
@@ -83,7 +85,7 @@ export default Header;
 
 
 // className='navbar-nav align-items-center'
-<Nav>
+{/* <Nav>
 
   <Nav.Item>
     {
@@ -117,4 +119,4 @@ export default Header;
         </Link>
     }
   </Nav.Item>
-</Nav>
+</Nav> */}
